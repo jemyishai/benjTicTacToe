@@ -1,5 +1,17 @@
 import React from 'react';
+import Square from './Square';
 
-const Board = () => <div>Board</div>
+const Board = ({squares, onclick}) => (
+	<div>
+		<Square value="1" onClick={() => onClick("dumbo prop")} />
+		<Square value="2" onClick={() => onClick("dumbo prop")} />
+		<Square value="1" onClick={() => onClick("dumbo prop")} />
+		<Square value="1" onClick={() => onClick("dumbo prop")} />
+		<Square value="1" onClick={() => onClick("dumbo prop")} />
+		<Square value="1" onClick={() => onClick("dumbo prop")} />
+		<Square value="1" onClick={() => onClick("dumbo prop")} />
+		<Square value="1" onClick={() => onClick("dumbo prop")} />
+	</div>
+)
 
 export default Board;
