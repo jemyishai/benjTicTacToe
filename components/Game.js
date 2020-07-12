@@ -17,7 +17,11 @@ const Game = () => {
 
 
  return (
+	 <div>
+	<p>yo</p>
+
 	<Board onClick={handleClick} />
+	</div>
  )
 
 }
