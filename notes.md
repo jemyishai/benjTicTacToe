@@ -12,3 +12,5 @@ random notes:
     -->
 
 https://duckduckgo.com/?q=react+app+loading&atb=v178-1&iax=videos&ia=videos&iai=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dj8NJc60H294
+
+https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658
