@@ -4,7 +4,7 @@ import Board from "./Board";
 
 const styles = {
 	width: '200px',
-	margin: '20px auto',
+	margin: '20px auto'
 };
 
 const Game = () => {
@@ -34,21 +34,29 @@ const Game = () => {
 		history.map((_step,move)=>{
 			const destination = move?`Go to move#${move}` : `Go to Start`;
 			return (
-				<li key ={move}>
+				<li key ={move} style={{ listStyleType: "none" }}>
 				<button onClick={ ()=> jumpTo(move)} >{destination} </button>
 				</li>
 			)
 		})
 	);
 
+	const resetGame = () => {
+		setHistory([Array(9).fill(null)]);
+		setStepNumber(0);
+		setXisNext(true);
+	}
+
   return (
-    <div>
-      <p>TicTacToe for BenjABoogALoo</p>
+    <div >
+      <p>TicTacToe for Benj-A-Boog-A-Loo</p>
 
 			<Board squares={history[stepNumber]} onClick={handleClick} />
 			<div styles={styles}>
 				<p>{ winner ? 'Winner: ' + winner : 'Next Player: ' + (xIsNext ? 'X' : 'O')} </p>
 				{ renderMoves() }
+				<hr />
+				<button onClick={resetGame}>RESET GAME</button>
 			</div>
     </div>
   );
